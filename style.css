@@ -109,34 +109,36 @@ body {
   width: 100%; }
 
 .hb {
-  margin-top: 150px;
-  background: radial-gradient(top, ellipse cover, #f85096 0%, #86dc18 25%, #267cf0 60%, #e73827 100%);
-  display: inline-block;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: 'Righteous', sans-serif;
-  font-size: 50px;
-  font-weight: 700;
-  position: relative; }
-  .hb::after, .hb::before {
-    content: attr(data-title);
+    margin-top: 150px;
+    background: radial-gradient(top, ellipse cover, #f85096 0%, #86dc18 25%, #267cf0 60%, #e73827 100%);
+    display: inline-block;
+    font-family: 'Righteous', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    position: relative;
+}
+.hb::after, .hb::before {
+    content: "";
     text-shadow: 8px -8px 0px #27292a;
     position: absolute;
     top: 0;
     left: 0;
-    animation: depth 6s -1s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite; }
-  .hb::after {
-    background: radial-gradient(top, ellipse cover, #f86464 0%, #0affc8 25%, #ee7cfa 60%, #faa61d 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transform: translate3d(0px, 16px, 0px) scale(0.9);
-    z-index: -1; }
-  .hb::before {
-    background: linear-gradient(top, #375db1 0%, #fdfb00 30%, #ef017c 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transform: translate3d(0px, 32px, 0px) scale(0.8);
-    z-index: -2; }
+    animation: depth 6s -1s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite; 
+}
+.hb::after {
+background: radial-gradient(top, ellipse cover, #f86464 0%, #0affc8 25%, #ee7cfa 60%, #faa61d 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+transform: translate3d(0px, 16px, 0px) scale(0.9);
+z-index: -1; 
+}
+.hb::before {
+background: linear-gradient(top, #375db1 0%, #fdfb00 30%, #ef017c 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+transform: translate3d(0px, 32px, 0px) scale(0.8);
+z-index: -2; 
+}
 
 @keyframes depth {
   50% {
