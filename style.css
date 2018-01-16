@@ -42,7 +42,7 @@ h1.main, p.demos {
 	line-height: 100px;
 	height: 90px;
 	margin-top: -50px;
-	font-size: 90px;
+	font-size: 60px;
 	width: 100%;
 	text-align: center;
 	color: transparent;
@@ -53,30 +53,16 @@ h1.main, p.demos {
 	animation-delay: 0s;
 }
 .sp-container h2.frame-2 {
-  font-size: 80px;
+  font-size: 60px;
 	animation-delay: 3s;
 }
 .sp-container h2.frame-3 {
-  font-size: 50px;
+  font-size: 40px;
 	animation-delay: 6s;
 }
 .sp-container h2.frame-4 {
-	font-size: 70px;
+	font-size: 50px;
 	animation-delay: 9s;
-}
-.sp-globe {
-	position: absolute;
-	width: 282px;
-	height: 273px;
-	left: 50%;
-	top: 50%;
-	margin: -137px 0 0 -141px;
-	background: transparent url(http://web-sonick.zz.mu/images/sl/globe.png) no-repeat top left; */
-	animation: fadeInBack 3.6s linear 14s backwards;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-	filter: alpha(opacity=30);
-	opacity: 0.3;
-	transform: scale(5);
 }
 @-webkit-keyframes blurFadeInOut {
 	0% {
