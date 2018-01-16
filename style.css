@@ -1,147 +1,19 @@
-@import url(https://fonts.googleapis.com/css?family=Righteous);
-@import url(https://fonts.googleapis.com/css?family=Cutive+Mono);
-html {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizelegibility;
-  box-sizing: border-box; }
-  html * {
-    box-sizing: inherit; }
-
-*:before, *:after {
-  content: " "; }
-
 body {
-  overflow: hidden;
-  background-color: #456ddd;
-  perspective: 1000px;
-  color: #fff;
-  font-family: 'Cutive Mono', sans-serif;
-  margin: 0;
-  text-align: center; }
-
-.card {
-  position: absolute;
-  top: 100px;
-  left: 50%;
-  margin-left: -175px;
-  width: 350px;
-  height: 470px;
-  transform-style: preserve-3d;
-  transition: all ease-in-out 1s; }
-  .card .page {
+    margin: 0;
+    background: #020202;
+    cursor: crosshair;
+    overflow: hidden;
+  }
+  canvas{display:block}
+  h1 {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform-origin: 0 0; }
-  .card .cover {
-    z-index: 2;
-    transform: rotateY(-20deg);
-    transition: transform ease-in-out 1.4s;
-    z-index: 5; }
-    .card .cover .content {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #dd9445;
-      z-index: 3; }
-    .card .cover:after {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      transform-origin: right bottom;
-      background-color: rgba(0, 0, 0, 0.3);
-      transform: skew(-8deg) rotateX(-10deg);
-      z-index: -1; }
-    .card .cover button {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      cursor: pointer;
-      background: transparent;
-      border: 3px solid #fff;
-      color: #fff;
-      font-size: 20px;
-      padding: 0.5em 1.4em; }
-      .card .cover button:focus {
-        outline: none; }
-  .card .inside {
-    z-index: 1;
-    transform: rotateY(-8deg); }
-    .card .inside .content {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #27292a;
-      z-index: 3; }
-    .card .inside:after {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      transform-origin: right bottom;
-      background-color: rgba(0, 0, 0, 0.3);
-      transform: skew(-8deg) rotateX(-10deg);
-      z-index: -1; }
-  .card.open {
-    margin-left: 0; }
-    .card.open .cover {
-      transform: rotateY(-175deg); }
-
-.t-text {
-  position: absolute;
-  top: 30px;
-  width: 100%; }
-
-.b-text {
-  position: absolute;
-  bottom: 30px;
-  width: 100%; }
-
-.hb {
-    margin-top: 150px;
-    background: radial-gradient(top, ellipse cover, #f85096 0%, #86dc18 25%, #267cf0 60%, #e73827 100%);
-    display: inline-block;
-    font-family: 'Righteous', sans-serif;
-    font-size: 50px;
-    font-weight: 700;
-    position: relative;
-}
-.hb::after, .hb::before {
-    content: "";
-    text-shadow: 8px -8px 0px #27292a;
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation: depth 6s -1s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite; 
-}
-.hb::after {
-background: radial-gradient(top, ellipse cover, #f86464 0%, #0affc8 25%, #ee7cfa 60%, #faa61d 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-transform: translate3d(0px, 16px, 0px) scale(0.9);
-z-index: -1; 
-}
-.hb::before {
-background: linear-gradient(top, #375db1 0%, #fdfb00 30%, #ef017c 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-transform: translate3d(0px, 32px, 0px) scale(0.8);
-z-index: -2; 
-}
-
-@keyframes depth {
-  50% {
-    transform: translate3d(0px, 0px, 0px); } }
-
-/*# sourceMappingURL=style.css.map */
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: "Source Sans Pro";
+    font-size: 5em;
+    font-weight: 900;
+    -webkit-user-select: none;
+    user-select: none;
+  }
