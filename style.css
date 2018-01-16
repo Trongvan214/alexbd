@@ -49,17 +49,19 @@ h1.main, p.demos {
 	animation: blurFadeInOut 3s ease-in backwards;
 }
 .sp-container h2.frame-1 {
+  font-size: 40px
 	animation-delay: 0s;
 }
 .sp-container h2.frame-2 {
+  font-size: 80px;
 	animation-delay: 3s;
 }
 .sp-container h2.frame-3 {
-  font-size: 70px;
+  font-size: 50px;
 	animation-delay: 6s;
 }
 .sp-container h2.frame-4 {
-	font-size: 100px;
+	font-size: 70px;
 	animation-delay: 9s;
 }
 .sp-globe {
