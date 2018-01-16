@@ -129,7 +129,6 @@ class Firework {
 
   }
 }
-
 let canvas = document.getElementById('birthday')
 let ctx = canvas.getContext('2d')
 
